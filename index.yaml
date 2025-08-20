@@ -14,7 +14,7 @@ entries:
     sources:
     - https://github.com/typesense/typesense
     urls:
-    - https://Marta-Barea.github.io/typesense-helm/typesense-1.0.14.tgz
+    - https://kahf-infra.github.io/typesense-helm/typesense-1.0.14.tgz
     version: 1.0.14
   - apiVersion: v2
     created: "2024-04-01T07:31:49.589837904Z"
@@ -29,7 +29,7 @@ entries:
     sources:
     - https://github.com/typesense/typesense
     urls:
-    - https://Marta-Barea.github.io/typesense-helm/typesense-1.0.11.tgz
+    - https://kahf-infra.github.io/typesense-helm/typesense-1.0.11.tgz
     version: 1.0.11
   - apiVersion: v2
     created: "2023-11-16T09:44:22.429013134Z"
@@ -44,7 +44,7 @@ entries:
     sources:
     - https://github.com/typesense/typesense
     urls:
-    - https://Marta-Barea.github.io/typesense-helm/typesense-1.0.10.tgz
+    - https://kahf-infra.github.io/typesense-helm/typesense-1.0.10.tgz
     version: 1.0.10
   - apiVersion: v2
     created: "2023-11-16T09:01:15.817193174Z"
@@ -59,7 +59,7 @@ entries:
     sources:
     - https://github.com/typesense/typesense
     urls:
-    - https://Marta-Barea.github.io/typesense-helm/typesense-1.0.9.tgz
+    - https://kahf-infra.github.io/typesense-helm/typesense-1.0.9.tgz
     version: 1.0.9
   - apiVersion: v2
     created: "2023-11-14T10:20:17.43225444Z"
@@ -74,7 +74,7 @@ entries:
     sources:
     - https://github.com/typesense/typesense
     urls:
-    - https://Marta-Barea.github.io/typesense-helm/typesense-1.0.8.tgz
+    - https://kahf-infra.github.io/typesense-helm/typesense-1.0.8.tgz
     version: 1.0.8
   - apiVersion: v2
     created: "2023-09-19T11:08:44.806639843Z"
@@ -89,7 +89,7 @@ entries:
     sources:
     - https://github.com/typesense/typesense
     urls:
-    - https://Marta-Barea.github.io/typesense-helm/typesense-1.0.6.tgz
+    - https://kahf-infra.github.io/typesense-helm/typesense-1.0.6.tgz
     version: 1.0.6
   - apiVersion: v2
     created: "2023-09-19T11:07:42.804325866Z"
@@ -104,6 +104,6 @@ entries:
     sources:
     - https://github.com/typesense/typesense
     urls:
-    - https://Marta-Barea.github.io/typesense-helm/typesense-1.0.4.tgz
+    - https://kahf-infra.github.io/typesense-helm/typesense-1.0.4.tgz
     version: 1.0.4
 generated: "2024-04-17T10:31:55.610521181Z"
