@@ -32,6 +32,14 @@ spec:
               value: {{ .Values.persistence.path }}
             - name: TYPESENSE_API_KEY
               value: {{ .Values.apiKey }}
+            {{- range $key, $value := .Values.extraEnv }}
+            - name: {{ $key }}
+              value: {{ $value | quote }}
+            {{- end }}
+          {{- if .Values.envFrom }}
+          envFrom:
+            {{- toYaml .Values.envFrom | nindent 12 }}
+          {{- end }}
           ports:
             - name: http
               containerPort: {{ .Values.applicationPort }}

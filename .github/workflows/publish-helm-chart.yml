@@ -1,14 +1,39 @@
 name: release
 on:
   push:
-    tags: "*"
+    tags:
+      - "v*.*.*"
 
 jobs:
   release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name "$GITHUB_ACTOR"
+          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+
+      - name: Install Helm
+        uses: azure/setup-helm@v4
+        with:
+          version: v3.13.0
+
+      - name: Lint Helm Chart
+        run: helm lint charts/typesense
+
+      - name: Package Helm Chart
+        run: helm package charts/typesense
+
       - name: Publish Helm charts
         uses: stefanprodan/helm-gh-pages@master
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          charts_dir: charts
+          target_dir: charts
